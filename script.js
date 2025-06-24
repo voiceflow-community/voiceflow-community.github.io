@@ -2,7 +2,7 @@
 // const GITHUB_API_BASE = 'https://api.github.com';
 // const ORG_NAME = 'voiceflow-community';
 // const REPOS_PER_PAGE = 30;
-// const LATEST_REPOS_COUNT = 4;
+const LATEST_REPOS_COUNT = 4
 
 // Global state
 let allRepositories = []
