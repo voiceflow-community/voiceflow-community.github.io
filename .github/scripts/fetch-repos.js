@@ -8,7 +8,7 @@ const API_BASE = 'https://api.github.com'
 const TOKEN = process.env.GH_PAT
 const OUTPUT_PATH = path.join(__dirname, '../../assets/repos.json')
 const README_DIR = path.join(__dirname, '../../assets/readmes')
-const IGNORE_REPOS = CONFIG.ui.IGNORE_REPOS || []
+const IGNORE_REPOS = CONFIG.IGNORE_REPOS || []
 
 async function fetchWithRetry(url, options = {}, retries = 3) {
   for (let i = 0; i < retries; i++) {

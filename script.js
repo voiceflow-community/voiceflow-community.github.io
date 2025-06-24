@@ -1,8 +1,7 @@
 // GitHub API Configuration
 const REPOS_PER_PAGE = 30
-// const GITHUB_API_BASE = 'https://api.github.com';
-// const ORG_NAME = 'voiceflow-community';
-const LATEST_REPOS_COUNT = 4
+const LATEST_REPOS_COUNT = 3
+// const IGNORE_REPOS = ['.github', 'voiceflow-community.github.io']
 
 // Global state
 let allRepositories = []
@@ -18,6 +17,8 @@ let totalStats = {
 // Load IGNORE_REPOS from config.js
 const IGNORE_REPOS =
   (window.SITE_CONFIG && window.SITE_CONFIG.IGNORE_REPOS) || []
+
+console.log(IGNORE_REPOS)
 
 // Language colors mapping
 const languageColors = {

@@ -21,7 +21,7 @@ const SITE_CONFIG = {
   // Display Settings
   display: {
     reposPerPage: 30,
-    latestReposCount: 4,
+    latestReposCount: 3,
     maxTopicsPerCard: 3,
     descriptionMaxLength: 150,
     readmePreviewLength: 1000,
