@@ -3,6 +3,9 @@ name: Fetch GitHub Repos
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'assets/repos.json'
+      - 'assets/readmes/**'
 
 jobs:
   fetch-repos:
