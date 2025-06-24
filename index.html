@@ -1,134 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voiceflow Community on Github</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        text-align: center;
-        padding: 20px;
-        position: relative;
-      }
-
-      #vanta-background {
-        position: fixed;
-        z-index: 0;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-      }
-
-      .logo {
-        width: 200px;
-        height: auto;
-        margin-bottom: 2rem;
-      }
-
-      h1 {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-      }
-
-      p {
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        opacity: 0.9;
-      }
-
-      .links {
-        display: flex;
-        gap: 1rem;
-        margin-top: 2rem;
-      }
-
-      .link {
-        color: white;
-        text-decoration: none;
-        padding: 0.75rem 1.5rem;
-        border: 2px solid white;
-        border-radius: 9999px;
-        transition: all 0.3s ease;
-        backdrop-filter: blur(5px);
-        background: rgba(255, 255, 255, 0.1);
-      }
-
-      .link:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: translateY(-2px);
-      }
-
-      @media (max-width: 640px) {
-        h1 {
-          font-size: 2rem;
-        }
-
-        p {
-          font-size: 1.1rem;
-        }
-
-        .links {
-          flex-direction: column;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="vanta-background"></div>
-    <div class="container">
-      <img src="/assets/voiceflow-community-logo.png" alt="Voiceflow Logo" class="logo" style="width: 300px; height: auto;">
-      <h1></h1>
-      <p>This space is dedicated to our amazing community of developers.</br>Stay tuned for updates, resources, and community projects.</p>
-      <!-- <div class="links">
-        <a href="https://github.com/voiceflow-community" class="link">GitHub Organization</a>
-        <a href="https://docs.voiceflow.com" class="link">Documentation</a>
-      </div> -->
+    <title>Voiceflow Community - Discover Amazing Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2>Loading Voiceflow Community Projects...</h2>
+            <p>Discovering amazing repositories for you</p>
+        </div>
     </div>
 
-    <!-- Vanta.js dependencies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
-    <script>
-      VANTA.DOTS({
-        el: "#vanta-background",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        scaleMobile: 1.00,
-        showLines: false,
-        color: 0xff5a39,
-        color2: 0xff5a39,
-        backgroundColor: 0x222222,
-        size: 3,
-        spacing: 35,
-        points: 20
-      })
-    </script>
-  </body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <img src="https://cdn.voiceflow.com/assets/logo.png" alt="Voiceflow" class="logo">
+                <span class="brand-text">Community</span>
+            </div>
+            <div class="nav-links">
+                <a href="https://github.com/voiceflow-community" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://discord.gg/voiceflow-community-1079548823610871889" target="_blank" class="nav-link">
+                    <i class="fab fa-discord"></i> Discord
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Discover Amazing <span class="gradient-text">Voiceflow</span> Projects
+            </h1>
+            <p class="hero-description">
+                Explore community-built integrations, examples, and tools that extend the power of Voiceflow.
+                From chatbot integrations to advanced AI workflows, find inspiration and ready-to-use solutions.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="total-repos">-</span>
+                    <span class="stat-label">Repositories</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="total-stars">-</span>
+                    <span class="stat-label">Total Stars</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="total-forks">-</span>
+                    <span class="stat-label">Total Forks</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-cards">
+                <div class="floating-card">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-robot"></i>
+                    <span>AI Agents</span>
+                </div>
+                <div class="floating-card">
+                    <i class="fas fa-comments"></i>
+                    <span>Chatbots</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Repositories Section -->
+    <section class="latest-repos">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-clock"></i>
+                Latest Additions
+            </h2>
+            <p class="section-description">
+                Check out the newest repositories added to our community
+            </p>
+            <div class="repos-grid" id="latest-repos-grid">
+                <!-- Latest repos will be populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Star Promotion Section -->
+    <section class="star-promotion">
+        <div class="container">
+            <div class="promotion-content">
+                <div class="promotion-text">
+                    <h2>Love What You See? Show Your Support!</h2>
+                    <p>
+                        Help us understand what the community values most. Star the repositories you find useful,
+                        and we'll prioritize creating more projects like the most popular ones.
+                    </p>
+                    <div class="promotion-features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Star repositories you find valuable</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Help us track trending projects</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <span>Influence future development priorities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="promotion-visual">
+                    <div class="star-animation">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Repositories Section -->
+    <section class="all-repos">
+        <div class="container">
+            <div class="repos-header">
+                <h2 class="section-title">
+                    <i class="fas fa-code-branch"></i>
+                    All Community Projects
+                </h2>
+                <div class="repos-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Search repositories...">
+                    </div>
+                    <div class="filter-controls">
+                        <select id="topic-filter" class="filter-select">
+                            <option value="">All Topics</option>
+                        </select>
+                        <select id="language-filter" class="filter-select">
+                            <option value="">All Languages</option>
+                        </select>
+                        <select id="sort-filter" class="filter-select">
+                            <option value="updated">Recently Updated</option>
+                            <option value="stars">Most Stars</option>
+                            <option value="forks">Most Forks</option>
+                            <option value="name">Name A-Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="repos-list" id="all-repos-list">
+                <!-- All repos will be populated here -->
+            </div>
+
+            <div class="load-more-container">
+                <button id="load-more-btn" class="load-more-btn" style="display: none;">
+                    <i class="fas fa-plus"></i>
+                    Load More Repositories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Repository Detail Modal -->
+    <div id="repo-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-repo-name"></h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-stats">
+                    <span class="modal-stat">
+                        <i class="fas fa-star"></i>
+                        <span id="modal-stars">0</span>
+                    </span>
+                    <span class="modal-stat">
+                        <i class="fas fa-code-branch"></i>
+                        <span id="modal-forks">0</span>
+                    </span>
+                    <span class="modal-stat">
+                        <i class="fas fa-eye"></i>
+                        <span id="modal-watchers">0</span>
+                    </span>
+                </div>
+                <div class="modal-description" id="modal-description"></div>
+                <div class="modal-topics" id="modal-topics"></div>
+                <div class="modal-readme" id="modal-readme">
+                    <h4>README Preview</h4>
+                    <div class="readme-content"></div>
+                </div>
+                <div class="modal-actions">
+                    <a id="modal-github-link" href="#" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                    <button id="modal-star-btn" class="btn btn-secondary">
+                        <i class="fas fa-star"></i>
+                        Star Repository
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Voiceflow Community</h4>
+                    <p>Building the future of conversational AI together</p>
+                    <div class="social-links">
+                        <a href="https://github.com/voiceflow-community" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://discord.gg/voiceflow-community-1079548823610871889" target="_blank">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://www.voiceflow.com" target="_blank">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://docs.voiceflow.com" target="_blank">Documentation</a></li>
+                        <li><a href="https://www.voiceflow.com/integrations" target="_blank">Integrations</a></li>
+                        <li><a href="https://github.com/voiceflow/api-examples" target="_blank">API Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="https://discord.gg/voiceflow-community-1079548823610871889" target="_blank">Discord Server</a></li>
+                        <li><a href="https://github.com/voiceflow-community" target="_blank">GitHub Organization</a></li>
+                        <li><a href="https://www.voiceflow.com" target="_blank">Main Website</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with ❤️ for the community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
