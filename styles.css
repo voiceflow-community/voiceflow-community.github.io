@@ -7,10 +7,13 @@
 
 :root {
     /* Voiceflow Brand Colors */
-    --primary-color: #3b82f6;
+    --primary-color: #ff5a39;
     --primary-dark: #2563eb;
     --secondary-color: #8b5cf6;
+    --vf-dark-color: #1f2428;
+    --vf-light-color: #3e4852;
     --accent-color: #06b6d4;
+    --vf-orange-color: #ff5a39;
     --success-color: #10b981;
     --warning-color: #f59e0b;
     --error-color: #ef4444;
@@ -29,7 +32,8 @@
     --gray-900: #111827;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --gradient-primary: linear-gradient(135deg, var(--vf-dark-color), var(--vf-light-color));
+    --gradient-logo: linear-gradient(135deg, var(--vf-dark-color), var(--primary-color));
     --gradient-accent: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 
     /* Shadows */
@@ -223,7 +227,7 @@ body {
 }
 
 .gradient-text {
-    background: var(--gradient-primary);
+    background: var(--gradient-logo);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -513,7 +517,7 @@ body {
 }
 
 .feature i {
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-size: var(--font-size-lg);
 }
 
@@ -530,7 +534,7 @@ body {
 
 .star-animation i {
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--vf-orange-color);
     animation: pulse 2s ease-in-out infinite;
 }
 
