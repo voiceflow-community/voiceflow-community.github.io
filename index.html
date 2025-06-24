@@ -37,13 +37,13 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="vanta-background">
         <div class="hero-content">
             <h1 class="hero-title">
                 Discover Amazing <span class="gradient-text">Voiceflow</span> Projects
             </h1>
             <p class="hero-description">
-                Explore community-built integrations, examples, and tools that extend the power of Voiceflow.
+                Explore community-built integrations, examples, and tools that extend the power of Voiceflow.</br>
                 From chatbot integrations to advanced AI workflows, find inspiration and ready-to-use solutions.
             </p>
             <div class="hero-stats">
@@ -257,12 +257,34 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>Built with ❤️ for the community.</p>
+                <p>Built with ♡ for the community.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Vanta.js dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <script>
+      VANTA.DOTS({
+        el: "#vanta-background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        showLines: false,
+        color: 0xff5a39,
+        color2: 0xff5a39,
+        backgroundColor: 0x1f2428,
+        size: 2,
+        spacing: 22,
+        points: 200
+      })
+    </script>
 </body>
 </html>

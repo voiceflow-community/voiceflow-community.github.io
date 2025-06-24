@@ -13,7 +13,6 @@ const SITE_CONFIG = {
   api: {
     baseUrl: 'https://api.github.com',
     version: '2022-11-28',
-    // token: 'github_token',
     retryAttempts: 3,
     retryDelay: 1000,
   },

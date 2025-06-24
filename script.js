@@ -1,7 +1,10 @@
 // GitHub API Configuration
-const REPOS_PER_PAGE = 30
-const LATEST_REPOS_COUNT = 3
-// const IGNORE_REPOS = ['.github', 'voiceflow-community.github.io']
+const REPOS_PER_PAGE =
+  (window.SITE_CONFIG && window.SITE_CONFIG.display?.reposPerPage) || 8
+const LATEST_REPOS_COUNT =
+  (window.SITE_CONFIG && window.SITE_CONFIG.display?.latestReposCount) || 3
+const IGNORE_REPOS =
+  (window.SITE_CONFIG && window.SITE_CONFIG.IGNORE_REPOS) || []
 
 // Global state
 let allRepositories = []
@@ -13,10 +16,6 @@ let totalStats = {
   stars: 0,
   forks: 0,
 }
-
-// Load IGNORE_REPOS from config.js
-const IGNORE_REPOS =
-  (window.SITE_CONFIG && window.SITE_CONFIG.IGNORE_REPOS) || []
 
 console.log(IGNORE_REPOS)
 
