@@ -94,9 +94,17 @@ const fetchOrganizationRepos = async () => {
   }
 }
 
-// Remove all GitHub API functions and replace fetchReadmeContent with a static message
+// Fetch README markdown for a repo and render as HTML
 const fetchReadmeContent = async (repo) => {
-  return 'README preview is not available in static mode.'
+  if (!repo.readmePath) return 'No README available for this repository.'
+  try {
+    const response = await fetch(repo.readmePath)
+    if (!response.ok) throw new Error('Failed to load README')
+    const markdown = await response.text()
+    return marked.parse(markdown)
+  } catch (e) {
+    return 'Failed to load README content.'
+  }
 }
 
 // UI functions
@@ -365,10 +373,9 @@ const openRepoModal = async (repo) => {
   )
   readmeContainer.innerHTML =
     '<div class="loading-spinner" style="margin: 2rem auto;"></div>'
-
   try {
-    const readmeContent = await fetchReadmeContent(repo)
-    readmeContainer.textContent = readmeContent
+    const readmeHtml = await fetchReadmeContent(repo)
+    readmeContainer.innerHTML = readmeHtml
   } catch (error) {
     readmeContainer.textContent = 'Failed to load README content.'
   }

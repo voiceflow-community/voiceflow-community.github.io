@@ -118,6 +118,9 @@ const SITE_CONFIG = {
     Swift: '#fa7343',
     Kotlin: '#7f52ff',
   },
+
+  // Repositories to ignore (by name)
+  IGNORE_REPOS: ['.github', 'voiceflow-community.github.io'],
 }
 
 // Export configuration for use in other files

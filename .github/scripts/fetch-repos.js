@@ -1,11 +1,14 @@
 const fetch = require('node-fetch')
 const fs = require('fs')
 const path = require('path')
+const CONFIG = require('../../config.js')
 
 const ORG_NAME = 'voiceflow-community'
 const API_BASE = 'https://api.github.com'
 const TOKEN = process.env.GH_PAT
 const OUTPUT_PATH = path.join(__dirname, '../../assets/repos.json')
+const README_DIR = path.join(__dirname, '../../assets/readmes')
+const IGNORE_REPOS = CONFIG.ui.IGNORE_REPOS || []
 
 async function fetchWithRetry(url, options = {}, retries = 3) {
   for (let i = 0; i < retries; i++) {
@@ -48,7 +51,10 @@ async function fetchAllRepos() {
       page++
     }
   }
-  // Fetch topics for each repo
+  // Filter out ignored repos
+  allRepos = allRepos.filter((repo) => !IGNORE_REPOS.includes(repo.name))
+  // Fetch topics and README for each repo
+  fs.mkdirSync(README_DIR, { recursive: true })
   for (const repo of allRepos) {
     try {
       const topicsRes = await fetchWithRetry(
@@ -58,6 +64,26 @@ async function fetchAllRepos() {
       repo.topics = topicsData.names || []
     } catch (e) {
       repo.topics = []
+    }
+    // Fetch README
+    try {
+      const readmeRes = await fetchWithRetry(
+        `${API_BASE}/repos/${repo.owner.login}/${repo.name}/readme`
+      )
+      if (readmeRes.ok) {
+        const readmeData = await readmeRes.json()
+        const content = Buffer.from(readmeData.content, 'base64').toString(
+          'utf-8'
+        )
+        const readmeFile = `${repo.name}.md`
+        const readmePath = path.join(README_DIR, readmeFile)
+        fs.writeFileSync(readmePath, content)
+        repo.readmePath = `assets/readmes/${readmeFile}`
+      } else {
+        repo.readmePath = null
+      }
+    } catch (e) {
+      repo.readmePath = null
     }
   }
   return allRepos
@@ -69,6 +95,7 @@ async function fetchAllRepos() {
     fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true })
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(repos, null, 2))
     console.log(`Fetched and saved ${repos.length} repos to ${OUTPUT_PATH}`)
+    console.log(`Fetched and saved READMEs to ${README_DIR}`)
   } catch (err) {
     console.error('Failed to fetch repos:', err)
     process.exit(1)
