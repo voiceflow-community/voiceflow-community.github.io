@@ -1,9 +1,8 @@
 name: Fetch GitHub Repos
 
 on:
-  schedule:
-    - cron: '0 * * * *' # every hour
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   fetch-repos:
