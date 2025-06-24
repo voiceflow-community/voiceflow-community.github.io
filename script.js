@@ -387,8 +387,8 @@ const openRepoModal = async (repo) => {
   document.getElementById('modal-watchers').textContent = formatNumber(
     repo.watchers_count || 0
   )
-  document.getElementById('modal-description').textContent =
-    repo.description || 'No description available'
+  //document.getElementById('modal-description').textContent =
+  //  repo.description || 'No description available'
   document.getElementById('modal-github-link').href = repo.html_url
 
   // Populate topics
