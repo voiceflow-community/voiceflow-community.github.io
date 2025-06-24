@@ -123,10 +123,12 @@ const SITE_CONFIG = {
   IGNORE_REPOS: ['.github', 'voiceflow-community.github.io'],
 }
 
-// Export configuration for use in other files
+// Export configuration for use in other files (Node.js)
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = SITE_CONFIG
 }
 
-// Make config available globally
-window.SITE_CONFIG = SITE_CONFIG
+// Make config available globally (browser)
+if (typeof window !== 'undefined') {
+  window.SITE_CONFIG = SITE_CONFIG
+}
