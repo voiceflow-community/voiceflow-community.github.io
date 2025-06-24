@@ -30,9 +30,11 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GH_PAT }}
-          commit-message: "chore: update repos.json [skip ci]"
+          commit-message: "chore: update repos.json and READMEs [skip ci]"
           branch: "update-repos-json"
-          title: "chore: update repos.json"
-          body: "Automated update of repos.json"
-          add-paths: assets/repos.json
+          title: "chore: update repos.json and READMEs"
+          body: "Automated update of repos.json and README files"
+          add-paths: |
+            assets/repos.json
+            assets/readmes/**
           delete-branch: true
