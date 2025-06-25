@@ -214,6 +214,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    padding-left: 2.5rem;
 }
 
 .hero-right {
@@ -1101,6 +1102,9 @@ body {
     }
     .hero-right {
         margin-top: 2rem;
+    }
+    .hero-left {
+        padding-left: 0;
     }
     .promotion-content {
         grid-template-columns: 1fr;
