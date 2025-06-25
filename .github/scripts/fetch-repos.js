@@ -85,6 +85,20 @@ async function fetchAllRepos() {
     } catch (e) {
       repo.readmePath = null
     }
+    // Fetch clone stats
+    try {
+      const clonesRes = await fetchWithRetry(
+        `${API_BASE}/repos/${repo.owner.login}/${repo.name}/traffic/clones`
+      )
+      if (clonesRes.ok) {
+        const clonesData = await clonesRes.json()
+        repo.clones_count = clonesData.count || 0
+      } else {
+        repo.clones_count = null
+      }
+    } catch (e) {
+      repo.clones_count = null
+    }
   }
   return allRepos
 }

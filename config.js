@@ -2,6 +2,16 @@
 // Modify these values to customize the site behavior
 
 const SITE_CONFIG = {
+  // Animated Hero Titles
+  heroTitles: [
+    'Augment your <span class="gradient-text">Voiceflow</span> projects',
+    'Build, learn, and inspire with <span class="gradient-text">Voiceflow</span>',
+    'Unlock the power of <span class="gradient-text">Voiceflow</span>',
+    'Supercharge your <span class="gradient-text">Voiceflow</span> agents',
+    'Discover, build, and share with <span class="gradient-text">Voiceflow</span>',
+    'Empower your <span class="gradient-text">Voiceflow</span> journey',
+  ],
+
   // GitHub Organization Settings
   organization: {
     name: 'voiceflow-community',
@@ -19,7 +29,7 @@ const SITE_CONFIG = {
 
   // Display Settings
   display: {
-    reposPerPage: 30,
+    reposPerPage: 8,
     latestReposCount: 3,
     maxTopicsPerCard: 3,
     descriptionMaxLength: 150,
@@ -88,7 +98,7 @@ const SITE_CONFIG = {
 
   // Error Messages
   messages: {
-    loading: 'Loading Voiceflow Community Projects...',
+    loading: 'Loading Voiceflow Community projects...',
     error: 'Failed to load repositories. Please try again later.',
     noResults: 'No repositories found matching your criteria.',
     offline: 'You are currently offline. Some features may not work properly.',
@@ -120,6 +130,13 @@ const SITE_CONFIG = {
 
   // Repositories to ignore (by name)
   IGNORE_REPOS: ['.github', 'voiceflow-community.github.io'],
+
+  // Loom Videos Section
+  loom: {
+    FOLDER_ID: 'd29d8d15706341329029ca19295adaa2',
+    VIDEOS_LIMIT: 12,
+    VIDEOS_PER_PAGE: 3,
+  },
 }
 
 // Export configuration for use in other files (Node.js)

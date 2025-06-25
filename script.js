@@ -15,9 +15,18 @@ let totalStats = {
   repos: 0,
   stars: 0,
   forks: 0,
+  clones: 0,
 }
 
-console.log(IGNORE_REPOS)
+// Loom Videos Section Logic
+const LOOM_FOLDER_ID =
+  window.SITE_CONFIG?.loom?.FOLDER_ID || 'd29d8d15706341329029ca19295adaa2'
+const LOOM_VIDEOS_LIMIT = window.SITE_CONFIG?.loom?.VIDEOS_LIMIT || 12
+const LOOM_VIDEOS_PER_PAGE = window.SITE_CONFIG?.loom?.VIDEOS_PER_PAGE || 2
+let loomVideos = []
+let loomCurrentPage = 1
+let loomHasNextPage = false
+let loomEndCursor = null
 
 // Language colors mapping
 const languageColors = {
@@ -164,21 +173,42 @@ const calculateTotalStats = () => {
       repos: acc.repos + 1,
       stars: acc.stars + (repo.stargazers_count || 0),
       forks: acc.forks + (repo.forks_count || 0),
+      clones: acc.clones + (repo.clones_count || 0),
     }),
-    { repos: 0, stars: 0, forks: 0 }
+    { repos: 0, stars: 0, forks: 0, clones: 0 }
   )
 }
 
+// Animate stats counters in hero section
+function animateStatCounter(elementId, endValue, duration = 1000) {
+  const el = document.getElementById(elementId)
+  if (!el) return
+  const startValue = 0
+  const range = endValue - startValue
+  const startTime = performance.now()
+  function update(now) {
+    const elapsed = now - startTime
+    const progress = Math.min(elapsed / duration, 1)
+    const value = Math.floor(startValue + range * progress)
+    el.textContent = formatNumber(value)
+    if (progress < 1) {
+      requestAnimationFrame(update)
+    } else {
+      el.textContent = formatNumber(endValue)
+    }
+  }
+  requestAnimationFrame(update)
+}
+
+function animateAllHeroStats() {
+  animateStatCounter('total-repos', totalStats.repos)
+  animateStatCounter('total-stars', totalStats.stars)
+  animateStatCounter('total-forks', totalStats.forks)
+  animateStatCounter('total-clones', totalStats.clones)
+}
+
 const updateStatsDisplay = () => {
-  document.getElementById('total-repos').textContent = formatNumber(
-    totalStats.repos
-  )
-  document.getElementById('total-stars').textContent = formatNumber(
-    totalStats.stars
-  )
-  document.getElementById('total-forks').textContent = formatNumber(
-    totalStats.forks
-  )
+  animateAllHeroStats()
 }
 
 const createRepoCard = (repo, isLatest = false) => {
@@ -387,8 +417,6 @@ const openRepoModal = async (repo) => {
   document.getElementById('modal-watchers').textContent = formatNumber(
     repo.watchers_count || 0
   )
-  //document.getElementById('modal-description').textContent =
-  //  repo.description || 'No description available'
   document.getElementById('modal-github-link').href = repo.html_url
 
   // Populate topics
@@ -416,7 +444,8 @@ const openRepoModal = async (repo) => {
 
   // Setup star button
   const starBtn = document.getElementById('modal-star-btn')
-  starBtn.onclick = () => {
+  starBtn.onclick = (e) => {
+    e.stopPropagation()
     window.open(repo.html_url, '_blank')
   }
 }
@@ -468,6 +497,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   })
 
+  // Prevent modal-actions clicks from bubbling to modal background
+  const modalActions = document.querySelector('.modal-actions')
+  if (modalActions) {
+    modalActions.addEventListener('click', (e) => {
+      e.stopPropagation()
+    })
+  }
+
   // Keyboard navigation
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -488,6 +525,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+
+  // Loom videos section
+  initLoomVideosSection()
+  setupLoomLoadMore()
+
+  // Animated hero title cycling
+  animateHeroTitle()
 })
 
 // Add some CSS animations via JavaScript
@@ -574,5 +618,167 @@ if (typeof module !== 'undefined' && module.exports) {
     truncateText,
     fetchOrganizationRepos,
     filterRepositories,
+  }
+}
+
+const fetchLoomVideos = async (limit = LOOM_VIDEOS_LIMIT, cursor = null) => {
+  const body = {
+    operationName: 'GetPublicFolderLooms',
+    variables: {
+      limit,
+      cursor,
+      folderId: LOOM_FOLDER_ID,
+    },
+    query:
+      'query GetPublicFolderLooms($limit: Int!, $cursor: String, $folderId: String!) {\n  getPublicFolderLooms {\n    ... on GetPublicFolderLoomsPayload {\n      videos(first: $limit, after: $cursor, folderId: $folderId) {\n        edges {\n          cursor\n          node {\n            id\n            name\n            visibility\n            __typename\n          }\n          __typename\n        }\n        pageInfo {\n          endCursor\n          hasNextPage\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    ... on Error {\n      message\n      __typename\n    }\n    __typename\n  }\n}',
+  }
+  const res = await fetch('https://loom-api.voiceflow.workers.dev', {
+    method: 'POST',
+    headers: {
+      accept: '*/*',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify(body),
+  })
+  if (!res.ok) {
+    const text = await res.text()
+    console.error('Loom fetch failed:', res.status, res.statusText, text)
+    throw new Error('Failed to fetch Loom videos')
+  }
+  const data = await res.json()
+  const payload = data?.data?.getPublicFolderLooms
+  if (!payload || !payload.videos) {
+    console.error('Loom payload error:', data)
+    throw new Error('No Loom videos found')
+  }
+  return payload.videos
+}
+
+const fetchLoomEmbed = async (videoId) => {
+  const url = `https://www.loom.com/v1/oembed?url=https://www.loom.com/share/${videoId}`
+  const res = await fetch(url, {
+    headers: {
+      accept: '*/*',
+    },
+  })
+  if (!res.ok) throw new Error('Failed to fetch Loom embed')
+  return res.json()
+}
+
+const renderHeroLoomVideo = async () => {
+  const heroContainer = document.getElementById('hero-loom-video')
+  const heroTitle = document.getElementById('hero-loom-title')
+  const heroLabel = document.getElementById('hero-loom-label')
+  heroContainer.innerHTML = ''
+  heroTitle.textContent = ''
+  heroLabel.textContent = 'Video of the week'
+  if (!loomVideos.length) return
+  const video = loomVideos[0]
+  try {
+    const embed = await fetchLoomEmbed(video.id)
+    // Force iframe height to 260px
+    let embedHtml = embed.html.replace(
+      /<iframe ([^>]*?)height="[0-9]+"([^>]*)>/,
+      '<iframe $1height="260" style="height:260px;"$2>'
+    )
+    heroContainer.innerHTML = embedHtml
+    heroTitle.textContent = video.name || ''
+  } catch (e) {
+    heroContainer.innerHTML =
+      '<div style="color: var(--error-color); padding: 1rem;">Failed to load video.</div>'
+    heroTitle.textContent = ''
+  }
+}
+
+const renderLoomVideos = async (reset = false) => {
+  const grid = document.getElementById('latest-videos-grid')
+  if (reset) {
+    grid.innerHTML = ''
+    loomCurrentPage = 1
+  }
+  const start = 1 // skip the first video (used in hero)
+  const end = start + loomCurrentPage * LOOM_VIDEOS_PER_PAGE
+  const videosToShow = loomVideos.slice(start, end)
+  grid.innerHTML = ''
+  for (const video of videosToShow) {
+    const card = document.createElement('div')
+    card.className = 'video-card fade-in'
+    card.style.animationDelay = '0s'
+    // Loading spinner while fetching embed
+    card.innerHTML = `<div class="loading-spinner" style="margin: 2rem auto;"></div>`
+    grid.appendChild(card)
+    try {
+      const embed = await fetchLoomEmbed(video.id)
+      // Force iframe height to 260px
+      let embedHtml = embed.html.replace(
+        /<iframe ([^>]*?)height="[0-9]+"([^>]*)>/,
+        '<iframe $1height="260" style="height:260px;"$2>'
+      )
+      card.innerHTML = `
+        ${embedHtml}
+        <div class="video-title">${video.name || ''}</div>
+      `
+    } catch (e) {
+      card.innerHTML =
+        '<div style="color: var(--error-color); padding: 1rem;">Failed to load video.</div>'
+    }
+  }
+  // Show/hide load more button
+  const loadMoreBtn = document.getElementById('load-more-videos-btn')
+  if (loomVideos.length - 1 > end - 1) {
+    loadMoreBtn.style.display = 'inline-flex'
+  } else {
+    loadMoreBtn.style.display = 'none'
+  }
+}
+
+const initLoomVideosSection = async () => {
+  const grid = document.getElementById('latest-videos-grid')
+  grid.innerHTML =
+    '<div class="loading-spinner" style="margin: 2rem auto;"></div>'
+  try {
+    const videosData = await fetchLoomVideos(LOOM_VIDEOS_LIMIT)
+    loomVideos = (videosData.edges || []).map((edge) => edge.node)
+    loomHasNextPage = videosData.pageInfo?.hasNextPage
+    loomEndCursor = videosData.pageInfo?.endCursor
+    await renderHeroLoomVideo()
+    await renderLoomVideos(true)
+  } catch (e) {
+    grid.innerHTML =
+      '<div style="color: var(--error-color); padding: 2rem;">Failed to load Loom videos.</div>'
+    document.getElementById('hero-loom-video').innerHTML = ''
+  }
+}
+
+// Event listener for load more videos
+const setupLoomLoadMore = () => {
+  const btn = document.getElementById('load-more-videos-btn')
+  btn.addEventListener('click', async () => {
+    loomCurrentPage++
+    await renderLoomVideos()
+  })
+}
+
+function animateHeroTitle() {
+  const el = document.getElementById('hero-title-animated')
+  if (!el) return
+  const HERO_TITLES = window.SITE_CONFIG?.heroTitles || []
+  let idx = 0
+  function showNext() {
+    el.classList.remove('fade-in')
+    el.classList.add('fade-out')
+    setTimeout(() => {
+      el.innerHTML = HERO_TITLES[idx]
+      el.classList.remove('fade-out')
+      el.classList.add('fade-in')
+      idx = (idx + 1) % HERO_TITLES.length
+      setTimeout(showNext, 6000)
+    }, 500)
+  }
+  if (HERO_TITLES.length > 0) {
+    el.innerHTML = HERO_TITLES[0]
+    el.classList.add('fade-in')
+    idx = 1
+    setTimeout(showNext, 6000)
   }
 }

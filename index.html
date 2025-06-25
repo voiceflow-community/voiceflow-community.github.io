@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voiceflow Community - Discover Amazing Projects</title>
+    <title>Voiceflow Community - Discover amazing projects for your AI Agents</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,7 +14,7 @@
         <div class="loading-content">
             <div class="loading-spinner"></div>
             <h2>Loading Voiceflow Community Projects...</h2>
-            <p>Discovering amazing code and projects for you</p>
+            <p>Discovering amazing code and projects for your agents</p>
         </div>
     </div>
 
@@ -39,26 +39,36 @@
     <!-- Hero Section -->
     <section class="hero" id="vanta-background">
         <div class="hero-content">
-            <h1 class="hero-title">
-                Discover Amazing <span class="gradient-text">Voiceflow</span> Projects
-            </h1>
-            <p class="hero-description">
-                Explore community-built integrations, examples, and tools that extend the power of Voiceflow.</br>
-                From chatbot integrations to advanced AI workflows, find inspiration and ready-to-use solutions.
-            </p>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number" id="total-repos">-</span>
-                    <span class="stat-label">Repositories</span>
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    <span id="hero-title-animated"></span>
+                </h1>
+                <p class="hero-description">
+                    Discover integrations, examples, and tools built by the Voiceflow team and the community to inspire your next project.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" id="total-repos">-</span>
+                        <span class="stat-label">Repositories</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="total-stars">-</span>
+                        <span class="stat-label">Total Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="total-forks">-</span>
+                        <span class="stat-label">Total Forks</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" id="total-clones">-</span>
+                        <span class="stat-label">Total Clones</span>
+                    </div>
                 </div>
-                <div class="stat">
-                    <span class="stat-number" id="total-stars">-</span>
-                    <span class="stat-label">Total Stars</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number" id="total-forks">-</span>
-                    <span class="stat-label">Total Forks</span>
-                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-loom-label" id="hero-loom-label">Video of the week</div>
+                <div id="hero-loom-video" class="hero-loom-video"></div>
+                <div class="hero-loom-title" id="hero-loom-title"></div>
             </div>
         </div>
         <!-- <div class="hero-visual">
@@ -83,12 +93,34 @@
         </div> -->
     </section>
 
+    <!-- Latest Videos Section -->
+    <section class="latest-videos">
+        <div class="container">
+            <h2 class="section-title">
+                <i class="fas fa-video"></i>
+                Latest videos
+            </h2>
+            <p class="section-description">
+                Watch the latest videos shared by the Voiceflow team
+            </p>
+            <div class="videos-grid" id="latest-videos-grid">
+                <!-- Loom videos will be populated here -->
+            </div>
+            <div class="load-more-container">
+                <button id="load-more-videos-btn" class="load-more-btn" style="display: none;">
+                    <i class="fas fa-plus"></i>
+                    Load more videos
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Latest Repositories Section -->
     <section class="latest-repos">
         <div class="container">
             <h2 class="section-title">
                 <i class="fas fa-clock"></i>
-                Latest Additions
+                Latest additions
             </h2>
             <p class="section-description">
                 Check out the newest repositories
@@ -141,7 +173,7 @@
             <div class="repos-header">
                 <h2 class="section-title">
                     <i class="fas fa-code-branch"></i>
-                    All Community Projects
+                    All repositories
                 </h2>
                 <div class="repos-controls">
                     <div class="search-box">
@@ -156,9 +188,9 @@
                             <option value="">All Languages</option>
                         </select>
                         <select id="sort-filter" class="filter-select">
-                            <option value="updated">Recently Updated</option>
-                            <option value="stars">Most Stars</option>
-                            <option value="forks">Most Forks</option>
+                            <option value="updated">Recently updated</option>
+                            <option value="stars">Most stars</option>
+                            <option value="forks">Most forks</option>
                             <option value="name">Name A-Z</option>
                         </select>
                     </div>
@@ -207,13 +239,13 @@
                     <div class="readme-content"></div>
                 </div>
                 <div class="modal-actions">
-                    <a id="modal-github-link" href="#" target="_blank" class="btn btn-primary">
+                    <a id="modal-github-link" href="https://github.com/voiceflow-community/" target="_blank" class="btn btn-primary">
                         <i class="fab fa-github"></i>
                         View on GitHub
                     </a>
                     <button id="modal-star-btn" class="btn btn-secondary">
                         <i class="fas fa-star"></i>
-                        Star Repository
+                        Star repository
                     </button>
                 </div>
             </div>
@@ -261,7 +293,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="config.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Vanta.js dependencies -->
