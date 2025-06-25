@@ -38,6 +38,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="vanta-background">
+        <img src="assets/lines.svg" class="hero-lines-bg" alt="" aria-hidden="true" />
         <div class="hero-content">
             <div class="hero-left">
                 <h1 class="hero-title">
@@ -298,9 +299,23 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Vanta.js dependencies -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script>
-      VANTA.DOTS({
+        VANTA.GLOBE({
+        el: "#vanta-background",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0xff5a39,
+        backgroundColor: 0x1f2428,
+        size: 0.90
+        })
+      /* VANTA.DOTS({
         el: "#vanta-background",
         mouseControls: true,
         touchControls: true,
@@ -316,7 +331,7 @@
         size: 2,
         spacing: 22,
         points: 200
-      })
+      }) */
     </script>
 </body>
 </html>
