@@ -2,3 +2,5 @@
 /docs
 /assets/readmes
 /assets/repos.json
+.env
+/node_modules

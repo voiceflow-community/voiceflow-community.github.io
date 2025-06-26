@@ -77,12 +77,24 @@ async function fetchAllRepos() {
         )
         const readmeFile = `${repo.name}.md`
         const readmePath = path.join(README_DIR, readmeFile)
-        fs.writeFileSync(readmePath, content)
+        try {
+          fs.writeFileSync(readmePath, content)
+          console.log(`[INFO] README written for ${repo.name} at ${readmePath}`)
+        } catch (writeErr) {
+          console.error(
+            `[ERROR] Failed to write README for ${repo.name}:`,
+            writeErr
+          )
+        }
         repo.readmePath = `assets/readmes/${readmeFile}`
       } else {
+        console.warn(
+          `[WARN] README not found for ${repo.name} (status: ${readmeRes.status})`
+        )
         repo.readmePath = null
       }
     } catch (e) {
+      console.error(`[ERROR] Exception fetching README for ${repo.name}:`, e)
       repo.readmePath = null
     }
     // Fetch clone stats
