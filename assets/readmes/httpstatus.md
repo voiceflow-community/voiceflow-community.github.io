@@ -1,6 +1,6 @@
 # httpstatus Node.js Service
 
-A minimalist Node.js web service for simulating HTTP responses, inspired by [httpstat.us](https://httpstat.us). Useful for testing client-side error handling and API integrations in Voiceflow agents.
+A minimalist Node.js web service for simulating HTTP responses, inspired by [httpstat.us](https://httpstat.us). Useful for testing client-side error handling, API integrations, and network conditions.
 
 ---
 
@@ -83,6 +83,8 @@ docker-compose up --build
 
 ### Docs
 - `GET /docs` — OpenAPI/Swagger UI
+- `GET /openapi.json` — Raw OpenAPI spec (JSON)
+- `GET /openapi.yaml` — Raw OpenAPI spec (YAML)
 
 ---
 
@@ -96,6 +98,8 @@ docker-compose up --build
 | `/echo`                | Returns request details                                  |
 | `/health`              | Health check (always 200 OK)                             |
 | `/docs`                | OpenAPI/Swagger documentation                            |
+| `/openapi.json`        | Raw OpenAPI spec (JSON)                                  |
+| `/openapi.yaml`        | Raw OpenAPI spec (YAML)                                  |
 
 ---
 
@@ -110,9 +114,13 @@ docker-compose up --build
 
 ## OpenAPI Documentation
 - Interactive docs available at [`/docs`](http://localhost:3000/docs) (port may vary).
+- Raw OpenAPI spec available at [`/openapi.json`](http://localhost:3000/openapi.json) and [`/openapi.yaml`](http://localhost:3000/openapi.yaml).
 - The docs always reflect the current server port.
 
 ---
 
 ## License
 MIT
+
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=voiceflow-community_httpstatus&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=voiceflow-community_httpstatus)
