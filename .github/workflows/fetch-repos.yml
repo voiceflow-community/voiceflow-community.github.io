@@ -1,6 +1,8 @@
 name: Fetch GitHub Repos
 
 on:
+  repository_dispatch:
+    types: [repo-created-or-updated]
   push:
     branches: [main]
     paths-ignore:
