@@ -119,6 +119,15 @@ const extractFirstLineFromReadme = (markdown) => {
   return lines.length > 0 ? lines[0] : ''
 }
 
+// Utility function to clean up README HTML (remove leading <hr>, <img>, or empty <p> tags)
+function cleanReadmeHtml(html) {
+  return html
+    .replace(/^<hr[^>]*>/i, '')
+    .replace(/^<img[^>]*>/i, '')
+    .replace(/^<p>\s*<\/p>/i, '')
+    .replace(/^\s+/, '')
+}
+
 // Fetch README markdown for a repo and render as HTML
 const fetchReadmeContent = async (repo) => {
   if (!repo.readmePath) return 'No README available for this repository.'
@@ -437,7 +446,7 @@ const openRepoModal = async (repo) => {
     '<div class="loading-spinner" style="margin: 2rem auto;"></div>'
   try {
     const readmeHtml = await fetchReadmeContent(repo)
-    readmeContainer.innerHTML = readmeHtml
+    readmeContainer.innerHTML = cleanReadmeHtml(readmeHtml)
   } catch (error) {
     readmeContainer.textContent = 'Failed to load README content.'
   }

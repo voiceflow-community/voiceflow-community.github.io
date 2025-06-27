@@ -922,9 +922,15 @@ body {
     padding: 1.5rem;
     max-height: 300px;
     overflow-y: auto;
+    margin-top: 0rem;
     margin-bottom: 1rem;
 }
-.readme-content h1,
+.readme-content h1 {
+    margin-top: 0rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
 .readme-content h2,
 .readme-content h3,
 .readme-content h4,
