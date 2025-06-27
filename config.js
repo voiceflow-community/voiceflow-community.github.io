@@ -133,7 +133,7 @@ const SITE_CONFIG = {
 
   // Loom Videos Section
   loom: {
-    FOLDER_ID: 'd29d8d15706341329029ca19295adaa2',
+    FOLDER_ID: 'c548f1db5c084972b786b6abf5634109',
     VIDEOS_LIMIT: 12,
     VIDEOS_PER_PAGE: 3,
   },
