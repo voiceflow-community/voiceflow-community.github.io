@@ -1,6 +1,9 @@
 name: Fetch GitHub Repos
 
 on:
+  schedule:
+    # Run daily at 2:00 AM UTC
+    - cron: '0 2 * * *'
   repository_dispatch:
     types: [repo-created-or-updated]
   push:
