@@ -75,3 +75,6 @@ vf-copilot <command>
 - `ai-add-api-tool [file]` — Use AI to generate and add an API tool
 
 See `vf-copilot <command> --help` for command-specific options.
+
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=voiceflow-community_voiceflow-agent-copilot&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=voiceflow-community_voiceflow-agent-copilot)
