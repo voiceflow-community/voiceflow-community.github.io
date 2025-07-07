@@ -14,6 +14,9 @@ on:
 
 jobs:
   fetch-repos:
+    permissions:
+      contents: read
+      pull-requests: write
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
