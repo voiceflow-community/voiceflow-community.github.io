@@ -65,6 +65,10 @@ LLAMAFIREWALL_SCANNERS={"USER": ["PROMPT_GUARD", "MODERATION", "PII_DETECTION"]}
 # Port configuration (optional, defaults to 8000)
 PORT=8000
 
+# Worker configuration (optional, defaults to 4)
+# Reduce to 1 for single-core systems or resource-constrained environments
+WORKERS=4
+
 # Tokenizer configuration
 TOKENIZERS_PARALLELISM=false
 ```
@@ -146,7 +150,46 @@ For production environments, consider the following:
    - Configure proper logging rotation
    - Set up backup strategies
 
-The API will be available at `http://localhost:8000`
+### Troubleshooting
+
+If you encounter issues with model downloading or child processes dying:
+
+1. **Model Download Issues (Container gets "Killed")**:
+   - **Memory Issue**: The default 1GB memory limit is insufficient for model downloads
+   - **Solution**: Increase memory limits in docker-compose.yml (recommended: 4GB+)
+   - **Check system memory**: Ensure your host has sufficient RAM available
+   - **Monitor during download**: Use `docker stats` to watch memory usage
+
+2. **Volume Permission Issues**:
+   - Check if the container can write to the cache directory:
+     ```bash
+     docker compose exec api ls -la /home/appuser/.cache/huggingface
+     ```
+   - Verify volume is mounted correctly:
+     ```bash
+     docker volume inspect llmfirewall-api_huggingface_cache
+     ```
+
+3. **Network/Download Issues**:
+   - Test HuggingFace connectivity from inside container:
+     ```bash
+     docker compose exec api curl -I https://huggingface.co
+     ```
+   - Verify HF_TOKEN is valid and has access to the model
+
+4. **Debugging Steps**:
+   - Check container logs in real-time: `docker compose logs -f api`
+   - Monitor system resources: `docker stats`
+   - Check host system memory: `free -h`
+   - Inspect volume: `docker volume inspect llmfirewall-api_huggingface_cache`
+
+5. **Performance Optimization**:
+   - For single-core systems, set `WORKERS=1` in your .env file
+   - Adjust timeout settings based on your model loading time
+   - Monitor container logs for memory/CPU usage patterns
+   - Consider increasing memory limits for model-heavy workloads
+
+The API will be available at `http://localhost:8000` (or your configured PORT)
 
 ## Configuration
 
