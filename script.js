@@ -94,6 +94,8 @@ const fetchOrganizationRepos = async () => {
     let repos = await response.json()
     // Filter out ignored repos (safety net)
     repos = repos.filter((repo) => !IGNORE_REPOS.includes(repo.name))
+    // Filter out private repositories - only show public repos
+    repos = repos.filter((repo) => !repo.private)
     allRepositories = repos
     filteredRepositories = [...allRepositories]
     calculateTotalStats()
