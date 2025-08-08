@@ -67,6 +67,7 @@ npm start
 |--------|----------|-------------|
 | `GET` | `/health` | Health check and service status |
 | `GET` | `/api/time/current/{timezone}` | Get current time in specified timezone |
+| `POST` | `/api/time/current` | Get current time in specified timezone (JSON payload) |
 | `POST` | `/api/time/convert` | Convert time between timezones |
 | `GET` | `/api/docs` | Interactive API documentation |
 | `GET` | `/metrics` | Prometheus metrics (if enabled) |
@@ -274,12 +275,23 @@ curl http://localhost:3000/health
 
 ### Get Current Time
 
+#### Using GET Endpoint
+
 ```bash
 # Get current time in New York
 curl "http://localhost:3000/api/time/current/America%2FNew_York"
 
 # Get current time in London
 curl "http://localhost:3000/api/time/current/Europe%2FLondon"
+```
+
+#### Using POST Endpoint (Recommended for Complex Timezone Names)
+
+```bash
+# Get current time in Paris
+curl -X POST http://localhost:3000/api/time/current \
+  -H "Content-Type: application/json" \
+  -d '{"timezone": "Europe/Paris"}'
 ```
 
 **Response:**
@@ -381,6 +393,9 @@ chmod +x test-docker-compose.sh
 # Test all endpoints
 curl http://localhost:3000/health
 curl "http://localhost:3000/api/time/current/UTC"
+curl -X POST http://localhost:3000/api/time/current \
+  -H "Content-Type: application/json" \
+  -d '{"timezone":"Europe/Paris"}'
 curl -X POST http://localhost:3000/api/time/convert \
   -H "Content-Type: application/json" \
   -d '{"sourceTime":"2024-01-15T12:00:00","sourceTimezone":"UTC","targetTimezone":"America/New_York"}'
@@ -609,3 +624,5 @@ For support and questions:
 ---
 
 **Built with ❤️ using Node.js, TypeScript, and Express.js**
+
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=voiceflow-community_date-time-api&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=voiceflow-community_date-time-api)
