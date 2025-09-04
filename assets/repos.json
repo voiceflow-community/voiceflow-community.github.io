@@ -1,5 +1,136 @@
 [
   {
+    "id": 1039992221,
+    "node_id": "R_kgDOPf0FnQ",
+    "name": "prompts-manager",
+    "full_name": "voiceflow-community/prompts-manager",
+    "private": false,
+    "owner": {
+      "login": "voiceflow-community",
+      "id": 216748768,
+      "node_id": "O_kgDODOtS4A",
+      "avatar_url": "https://avatars.githubusercontent.com/u/216748768?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/voiceflow-community",
+      "html_url": "https://github.com/voiceflow-community",
+      "followers_url": "https://api.github.com/users/voiceflow-community/followers",
+      "following_url": "https://api.github.com/users/voiceflow-community/following{/other_user}",
+      "gists_url": "https://api.github.com/users/voiceflow-community/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/voiceflow-community/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/voiceflow-community/subscriptions",
+      "organizations_url": "https://api.github.com/users/voiceflow-community/orgs",
+      "repos_url": "https://api.github.com/users/voiceflow-community/repos",
+      "events_url": "https://api.github.com/users/voiceflow-community/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/voiceflow-community/received_events",
+      "type": "Organization",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "html_url": "https://github.com/voiceflow-community/prompts-manager",
+    "description": null,
+    "fork": false,
+    "url": "https://api.github.com/repos/voiceflow-community/prompts-manager",
+    "forks_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/forks",
+    "keys_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/keys{/key_id}",
+    "collaborators_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/collaborators{/collaborator}",
+    "teams_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/teams",
+    "hooks_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/hooks",
+    "issue_events_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues/events{/number}",
+    "events_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/events",
+    "assignees_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/assignees{/user}",
+    "branches_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/branches{/branch}",
+    "tags_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/tags",
+    "blobs_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/blobs{/sha}",
+    "git_tags_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/tags{/sha}",
+    "git_refs_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/refs{/sha}",
+    "trees_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/trees{/sha}",
+    "statuses_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/statuses/{sha}",
+    "languages_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/languages",
+    "stargazers_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/stargazers",
+    "contributors_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/contributors",
+    "subscribers_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/subscribers",
+    "subscription_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/subscription",
+    "commits_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/commits{/sha}",
+    "git_commits_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/commits{/sha}",
+    "comments_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/comments{/number}",
+    "issue_comment_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues/comments{/number}",
+    "contents_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/contents/{+path}",
+    "compare_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/compare/{base}...{head}",
+    "merges_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/merges",
+    "archive_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/{archive_format}{/ref}",
+    "downloads_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/downloads",
+    "issues_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues{/number}",
+    "pulls_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/pulls{/number}",
+    "milestones_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/milestones{/number}",
+    "notifications_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/notifications{?since,all,participating}",
+    "labels_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/labels{/name}",
+    "releases_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/releases{/id}",
+    "deployments_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/deployments",
+    "created_at": "2025-08-18T09:45:48Z",
+    "updated_at": "2025-09-03T14:48:00Z",
+    "pushed_at": "2025-09-01T09:39:20Z",
+    "git_url": "git://github.com/voiceflow-community/prompts-manager.git",
+    "ssh_url": "git@github.com:voiceflow-community/prompts-manager.git",
+    "clone_url": "https://github.com/voiceflow-community/prompts-manager.git",
+    "svn_url": "https://github.com/voiceflow-community/prompts-manager",
+    "homepage": null,
+    "size": 143,
+    "stargazers_count": 1,
+    "watchers_count": 1,
+    "language": "TypeScript",
+    "has_issues": true,
+    "has_projects": true,
+    "has_downloads": true,
+    "has_wiki": true,
+    "has_pages": false,
+    "has_discussions": false,
+    "forks_count": 0,
+    "mirror_url": null,
+    "archived": false,
+    "disabled": false,
+    "open_issues_count": 0,
+    "license": null,
+    "allow_forking": true,
+    "is_template": false,
+    "web_commit_signoff_required": false,
+    "topics": [],
+    "visibility": "public",
+    "forks": 0,
+    "open_issues": 0,
+    "watchers": 1,
+    "default_branch": "main",
+    "permissions": {
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "enabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "enabled"
+      },
+      "dependabot_security_updates": {
+        "status": "disabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "enabled"
+      },
+      "secret_scanning_ai_detection": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "enabled"
+      }
+    },
+    "custom_properties": {},
+    "readmePath": "assets/readmes/prompts-manager.md",
+    "clones_count": 12
+  },
+  {
     "id": 1022620478,
     "node_id": "R_kgDOPPPzPg",
     "name": "date-time-api",
@@ -74,7 +205,7 @@
     "clone_url": "https://github.com/voiceflow-community/date-time-api.git",
     "svn_url": "https://github.com/voiceflow-community/date-time-api",
     "homepage": null,
-    "size": 167,
+    "size": 184,
     "stargazers_count": 0,
     "watchers_count": 0,
     "language": "TypeScript",
@@ -128,138 +259,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/date-time-api.md",
-    "clones_count": 3
-  },
-  {
-    "id": 1039992221,
-    "node_id": "R_kgDOPf0FnQ",
-    "name": "prompts-manager",
-    "full_name": "voiceflow-community/prompts-manager",
-    "private": false,
-    "owner": {
-      "login": "voiceflow-community",
-      "id": 216748768,
-      "node_id": "O_kgDODOtS4A",
-      "avatar_url": "https://avatars.githubusercontent.com/u/216748768?v=4",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/voiceflow-community",
-      "html_url": "https://github.com/voiceflow-community",
-      "followers_url": "https://api.github.com/users/voiceflow-community/followers",
-      "following_url": "https://api.github.com/users/voiceflow-community/following{/other_user}",
-      "gists_url": "https://api.github.com/users/voiceflow-community/gists{/gist_id}",
-      "starred_url": "https://api.github.com/users/voiceflow-community/starred{/owner}{/repo}",
-      "subscriptions_url": "https://api.github.com/users/voiceflow-community/subscriptions",
-      "organizations_url": "https://api.github.com/users/voiceflow-community/orgs",
-      "repos_url": "https://api.github.com/users/voiceflow-community/repos",
-      "events_url": "https://api.github.com/users/voiceflow-community/events{/privacy}",
-      "received_events_url": "https://api.github.com/users/voiceflow-community/received_events",
-      "type": "Organization",
-      "user_view_type": "public",
-      "site_admin": false
-    },
-    "html_url": "https://github.com/voiceflow-community/prompts-manager",
-    "description": null,
-    "fork": false,
-    "url": "https://api.github.com/repos/voiceflow-community/prompts-manager",
-    "forks_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/forks",
-    "keys_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/keys{/key_id}",
-    "collaborators_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/collaborators{/collaborator}",
-    "teams_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/teams",
-    "hooks_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/hooks",
-    "issue_events_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues/events{/number}",
-    "events_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/events",
-    "assignees_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/assignees{/user}",
-    "branches_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/branches{/branch}",
-    "tags_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/tags",
-    "blobs_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/blobs{/sha}",
-    "git_tags_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/tags{/sha}",
-    "git_refs_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/refs{/sha}",
-    "trees_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/trees{/sha}",
-    "statuses_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/statuses/{sha}",
-    "languages_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/languages",
-    "stargazers_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/stargazers",
-    "contributors_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/contributors",
-    "subscribers_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/subscribers",
-    "subscription_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/subscription",
-    "commits_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/commits{/sha}",
-    "git_commits_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/git/commits{/sha}",
-    "comments_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/comments{/number}",
-    "issue_comment_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues/comments{/number}",
-    "contents_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/contents/{+path}",
-    "compare_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/compare/{base}...{head}",
-    "merges_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/merges",
-    "archive_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/{archive_format}{/ref}",
-    "downloads_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/downloads",
-    "issues_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/issues{/number}",
-    "pulls_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/pulls{/number}",
-    "milestones_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/milestones{/number}",
-    "notifications_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/notifications{?since,all,participating}",
-    "labels_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/labels{/name}",
-    "releases_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/releases{/id}",
-    "deployments_url": "https://api.github.com/repos/voiceflow-community/prompts-manager/deployments",
-    "created_at": "2025-08-18T09:45:48Z",
-    "updated_at": "2025-09-01T09:39:23Z",
-    "pushed_at": "2025-09-01T09:39:20Z",
-    "git_url": "git://github.com/voiceflow-community/prompts-manager.git",
-    "ssh_url": "git@github.com:voiceflow-community/prompts-manager.git",
-    "clone_url": "https://github.com/voiceflow-community/prompts-manager.git",
-    "svn_url": "https://github.com/voiceflow-community/prompts-manager",
-    "homepage": null,
-    "size": 143,
-    "stargazers_count": 0,
-    "watchers_count": 0,
-    "language": "TypeScript",
-    "has_issues": true,
-    "has_projects": true,
-    "has_downloads": true,
-    "has_wiki": true,
-    "has_pages": false,
-    "has_discussions": false,
-    "forks_count": 0,
-    "mirror_url": null,
-    "archived": false,
-    "disabled": false,
-    "open_issues_count": 0,
-    "license": null,
-    "allow_forking": true,
-    "is_template": false,
-    "web_commit_signoff_required": false,
-    "topics": [],
-    "visibility": "public",
-    "forks": 0,
-    "open_issues": 0,
-    "watchers": 0,
-    "default_branch": "main",
-    "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "enabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "enabled"
-      },
-      "dependabot_security_updates": {
-        "status": "disabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "enabled"
-      },
-      "secret_scanning_ai_detection": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "enabled"
-      }
-    },
-    "custom_properties": {},
-    "readmePath": "assets/readmes/prompts-manager.md",
-    "clones_count": 48
+    "clones_count": 24
   },
   {
     "id": 1044272378,
@@ -390,7 +390,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/slm-in-browser.md",
-    "clones_count": 15
+    "clones_count": 24
   },
   {
     "id": 823218811,
@@ -521,7 +521,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-vapi.md",
-    "clones_count": 21
+    "clones_count": 24
   },
   {
     "id": 513621469,
@@ -652,7 +652,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/example-integration-whatsapp.md",
-    "clones_count": 10
+    "clones_count": 14
   },
   {
     "id": 794508992,
@@ -783,7 +783,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmlingua-api.md",
-    "clones_count": 9
+    "clones_count": 8
   },
   {
     "id": 1037894698,
@@ -914,7 +914,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-prompts.md",
-    "clones_count": 109
+    "clones_count": 6
   },
   {
     "id": 1017541952,
@@ -1182,7 +1182,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-extensions-demo.md",
-    "clones_count": 6
+    "clones_count": 9
   },
   {
     "id": 1019628655,
@@ -1447,7 +1447,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-agent-copilot.md",
-    "clones_count": 2
+    "clones_count": 3
   },
   {
     "id": 996725129,
@@ -1578,7 +1578,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-zendesk-demo.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 913851846,
@@ -1709,7 +1709,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-form-extension-demo.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 1009556744,
@@ -1840,7 +1840,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/httpstatus.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 1008884126,
@@ -2233,7 +2233,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-mcp-server-client.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 966799438,
@@ -2364,7 +2364,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/Voiceflow-KB-MCP.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 964508606,
@@ -2495,7 +2495,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voice-call-timer.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 696215059,
@@ -2757,7 +2757,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-voice-outbound.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 726205143,
@@ -2888,7 +2888,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-twilio-sms-integration.md",
-    "clones_count": 6
+    "clones_count": 7
   },
   {
     "id": 880412592,
@@ -3019,7 +3019,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-transcripts-csv-export.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 876223225,
@@ -3543,7 +3543,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-seatselector-extension-demo.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 715715476,
@@ -4990,7 +4990,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-me.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 704451775,
@@ -5514,7 +5514,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/kb-vf-zendesk.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 685458821,
@@ -5645,7 +5645,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/hugginface-inference.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 778847662,
@@ -5907,7 +5907,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/answers-user-feedback.md",
-    "clones_count": 4
+    "clones_count": 6
   },
   {
     "id": 664701432,
@@ -6169,7 +6169,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/elevenlabs-integration.md",
-    "clones_count": 12
+    "clones_count": 13
   },
   {
     "id": 525908718,
@@ -6574,7 +6574,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-discord.md",
-    "clones_count": 11
+    "clones_count": 9
   },
   {
     "id": 630555418,
@@ -6967,7 +6967,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/webpage-chat-demo.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 664720036,
@@ -7104,7 +7104,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-slack.md",
-    "clones_count": 9
+    "clones_count": 28
   },
   {
     "id": 688957198,
@@ -7235,7 +7235,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/discord-live-answer-example.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 664723717,
@@ -7366,6 +7366,6 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/langchain-local-knowledgebase.md",
-    "clones_count": 7
+    "clones_count": 8
   }
 ]
