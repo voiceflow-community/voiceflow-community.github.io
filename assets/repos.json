@@ -128,7 +128,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-prompts.md",
-    "clones_count": 11
+    "clones_count": 9
   },
   {
     "id": 1039992221,
@@ -259,7 +259,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/prompts-manager.md",
-    "clones_count": 14
+    "clones_count": 13
   },
   {
     "id": 1022620478,
@@ -521,7 +521,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/slm-in-browser.md",
-    "clones_count": 26
+    "clones_count": 17
   },
   {
     "id": 823218811,
@@ -652,7 +652,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-vapi.md",
-    "clones_count": 22
+    "clones_count": 10
   },
   {
     "id": 513621469,
@@ -783,7 +783,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/example-integration-whatsapp.md",
-    "clones_count": 10
+    "clones_count": 8
   },
   {
     "id": 794508992,
@@ -914,7 +914,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmlingua-api.md",
-    "clones_count": 6
+    "clones_count": 7
   },
   {
     "id": 1017541952,
@@ -1182,7 +1182,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-extensions-demo.md",
-    "clones_count": 8
+    "clones_count": 7
   },
   {
     "id": 1019628655,
@@ -4335,7 +4335,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-date-parser.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 833086615,
@@ -4466,7 +4466,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-chat-domain-checker.md",
-    "clones_count": 1
+    "clones_count": 2
   },
   {
     "id": 761468585,
@@ -7104,7 +7104,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-slack.md",
-    "clones_count": 31
+    "clones_count": 32
   },
   {
     "id": 688957198,
@@ -7366,6 +7366,6 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/langchain-local-knowledgebase.md",
-    "clones_count": 10
+    "clones_count": 9
   }
 ]
