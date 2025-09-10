@@ -74,7 +74,7 @@
     "clone_url": "https://github.com/voiceflow-community/hra-api.git",
     "svn_url": "https://github.com/voiceflow-community/hra-api",
     "homepage": null,
-    "size": 0,
+    "size": 25,
     "stargazers_count": 0,
     "watchers_count": 0,
     "language": "Python",
@@ -134,7 +134,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/hra-api.md",
-    "clones_count": 0
+    "clones_count": 14
   },
   {
     "id": 1037894698,
@@ -1051,7 +1051,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmlingua-api.md",
-    "clones_count": 8
+    "clones_count": 9
   },
   {
     "id": 1017541952,
@@ -2239,7 +2239,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-perplexity-reasoning-extension.md",
-    "clones_count": 7
+    "clones_count": 8
   },
   {
     "id": 954000720,
@@ -2501,7 +2501,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/Voiceflow-KB-MCP.md",
-    "clones_count": 7
+    "clones_count": 5
   },
   {
     "id": 964508606,
@@ -2763,7 +2763,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vfassistant-electron.md",
-    "clones_count": 6
+    "clones_count": 5
   },
   {
     "id": 898925657,
@@ -3025,7 +3025,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-twilio-sms-integration.md",
-    "clones_count": 9
+    "clones_count": 8
   },
   {
     "id": 880412592,
@@ -3811,7 +3811,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-proxy-api.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 880817333,
@@ -6973,7 +6973,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/ner-manager.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 664715710,
