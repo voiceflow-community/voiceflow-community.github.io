@@ -265,7 +265,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/hra-api.md",
-    "clones_count": 16
+    "clones_count": 19
   },
   {
     "id": 1039992221,
@@ -396,7 +396,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/prompts-manager.md",
-    "clones_count": 14
+    "clones_count": 16
   },
   {
     "id": 1022620478,
@@ -658,7 +658,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/slm-in-browser.md",
-    "clones_count": 18
+    "clones_count": 14
   },
   {
     "id": 823218811,
@@ -860,13 +860,13 @@
     "deployments_url": "https://api.github.com/repos/voiceflow-community/example-integration-whatsapp/deployments",
     "created_at": "2022-07-13T17:57:26Z",
     "updated_at": "2025-08-24T14:23:10Z",
-    "pushed_at": "2025-07-21T23:29:44Z",
+    "pushed_at": "2025-09-13T11:46:38Z",
     "git_url": "git://github.com/voiceflow-community/example-integration-whatsapp.git",
     "ssh_url": "git@github.com:voiceflow-community/example-integration-whatsapp.git",
     "clone_url": "https://github.com/voiceflow-community/example-integration-whatsapp.git",
     "svn_url": "https://github.com/voiceflow-community/example-integration-whatsapp",
     "homepage": null,
-    "size": 2387,
+    "size": 2399,
     "stargazers_count": 75,
     "watchers_count": 75,
     "language": "JavaScript",
@@ -880,7 +880,7 @@
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 8,
+    "open_issues_count": 9,
     "license": null,
     "allow_forking": true,
     "is_template": false,
@@ -888,7 +888,7 @@
     "topics": [],
     "visibility": "public",
     "forks": 56,
-    "open_issues": 8,
+    "open_issues": 9,
     "watchers": 75,
     "default_branch": "master",
     "permissions": {
@@ -920,7 +920,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/example-integration-whatsapp.md",
-    "clones_count": 12
+    "clones_count": 19
   },
   {
     "id": 794508992,
@@ -1051,7 +1051,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmlingua-api.md",
-    "clones_count": 10
+    "clones_count": 8
   },
   {
     "id": 1017541952,
@@ -1188,7 +1188,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmfirewall-api.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 768364471,
@@ -1319,7 +1319,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-extensions-demo.md",
-    "clones_count": 8
+    "clones_count": 11
   },
   {
     "id": 1019628655,
@@ -1715,7 +1715,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-zendesk-demo.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 913851846,
@@ -1846,7 +1846,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-form-extension-demo.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 1009556744,
@@ -2108,7 +2108,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-llms-to-kb.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 935452411,
@@ -2239,7 +2239,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-perplexity-reasoning-extension.md",
-    "clones_count": 8
+    "clones_count": 7
   },
   {
     "id": 954000720,
@@ -2370,7 +2370,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-mcp-server-client.md",
-    "clones_count": 6
+    "clones_count": 8
   },
   {
     "id": 966799438,
@@ -2501,7 +2501,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/Voiceflow-KB-MCP.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 964508606,
@@ -2763,7 +2763,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vfassistant-electron.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 898925657,
@@ -3025,7 +3025,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-twilio-sms-integration.md",
-    "clones_count": 8
+    "clones_count": 9
   },
   {
     "id": 880412592,
@@ -3156,7 +3156,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-transcripts-csv-export.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 876223225,
@@ -3287,7 +3287,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-spacy-pii-redac.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 863133813,
@@ -3418,7 +3418,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-sitemap-kb-auto-updater.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 861719434,
@@ -3549,7 +3549,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-shopify-demo-extensions.md",
-    "clones_count": 4
+    "clones_count": 6
   },
   {
     "id": 845485693,
@@ -3811,7 +3811,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-proxy-api.md",
-    "clones_count": 6
+    "clones_count": 7
   },
   {
     "id": 880817333,
@@ -3942,7 +3942,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-phoenix-integration.md",
-    "clones_count": 4
+    "clones_count": 5
   },
   {
     "id": 866757293,
@@ -4073,7 +4073,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-pdf-content-reader-extension.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 832087938,
@@ -4204,7 +4204,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-kb-content-export.md",
-    "clones_count": 6
+    "clones_count": 5
   },
   {
     "id": 747073587,
@@ -4603,7 +4603,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-chat-domain-checker.md",
-    "clones_count": 3
+    "clones_count": 4
   },
   {
     "id": 761468585,
@@ -4996,7 +4996,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-nano-udp-audio-server.md",
-    "clones_count": 8
+    "clones_count": 6
   },
   {
     "id": 793728647,
@@ -5127,7 +5127,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-me.md",
-    "clones_count": 7
+    "clones_count": 5
   },
   {
     "id": 704451775,
@@ -5389,7 +5389,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/poc-voice-tester.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 924673974,
@@ -5520,7 +5520,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/poc-twilio-call-recorder.md",
-    "clones_count": 6
+    "clones_count": 7
   },
   {
     "id": 697018607,
@@ -5913,7 +5913,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/download-kb-file.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 936635061,
@@ -6175,7 +6175,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/asr-demo-whisper.md",
-    "clones_count": 5
+    "clones_count": 4
   },
   {
     "id": 664704867,
@@ -6306,7 +6306,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/elevenlabs-integration.md",
-    "clones_count": 12
+    "clones_count": 11
   },
   {
     "id": 525908718,
@@ -6443,7 +6443,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/api-integration-msteams.md",
-    "clones_count": 6
+    "clones_count": 4
   },
   {
     "id": 664718093,
@@ -6580,7 +6580,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-twilio-ivr.md",
-    "clones_count": 13
+    "clones_count": 8
   },
   {
     "id": 664722047,
@@ -6711,7 +6711,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-discord.md",
-    "clones_count": 11
+    "clones_count": 10
   },
   {
     "id": 630555418,
@@ -7104,7 +7104,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/webpage-chat-demo.md",
-    "clones_count": 8
+    "clones_count": 7
   },
   {
     "id": 664720036,
@@ -7241,7 +7241,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-slack.md",
-    "clones_count": 33
+    "clones_count": 29
   },
   {
     "id": 688957198,
@@ -7372,7 +7372,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/discord-live-answer-example.md",
-    "clones_count": 8
+    "clones_count": 7
   },
   {
     "id": 664723717,
@@ -7503,6 +7503,6 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/langchain-local-knowledgebase.md",
-    "clones_count": 8
+    "clones_count": 11
   }
 ]
