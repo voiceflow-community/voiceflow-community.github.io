@@ -128,7 +128,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-notes-ai.md",
-    "clones_count": 18
+    "clones_count": 12
   },
   {
     "id": 1113092498,
@@ -256,7 +256,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/raxe-api.md",
-    "clones_count": 49
+    "clones_count": 50
   },
   {
     "id": 1008884126,
@@ -384,7 +384,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-llms-to-kb.md",
-    "clones_count": 60
+    "clones_count": 11
   },
   {
     "id": 880817333,
@@ -512,7 +512,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-phoenix-integration.md",
-    "clones_count": 52
+    "clones_count": 20
   },
   {
     "id": 954000720,
@@ -640,7 +640,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-mcp-server-client.md",
-    "clones_count": 50
+    "clones_count": 15
   },
   {
     "id": 924673974,
@@ -768,7 +768,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/poc-twilio-call-recorder.md",
-    "clones_count": 65
+    "clones_count": 13
   },
   {
     "id": 1009556744,
@@ -896,7 +896,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/httpstatus.md",
-    "clones_count": 23
+    "clones_count": 11
   },
   {
     "id": 747073587,
@@ -1030,7 +1030,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-crawler-uploader.md",
-    "clones_count": 29
+    "clones_count": 20
   },
   {
     "id": 513621469,
@@ -1158,7 +1158,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/example-integration-whatsapp.md",
-    "clones_count": 76
+    "clones_count": 30
   },
   {
     "id": 664722047,
@@ -1286,7 +1286,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-discord.md",
-    "clones_count": 30
+    "clones_count": 23
   },
   {
     "id": 664718093,
@@ -1420,7 +1420,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-twilio-ivr.md",
-    "clones_count": 49
+    "clones_count": 16
   },
   {
     "id": 685458821,
@@ -1548,7 +1548,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/hugginface-inference.md",
-    "clones_count": 28
+    "clones_count": 18
   },
   {
     "id": 688957198,
@@ -1676,7 +1676,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/discord-live-answer-example.md",
-    "clones_count": 25
+    "clones_count": 15
   },
   {
     "id": 823218811,
@@ -1804,7 +1804,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-vapi.md",
-    "clones_count": 45
+    "clones_count": 19
   },
   {
     "id": 947270048,
@@ -1932,7 +1932,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-nano-udp-audio-server.md",
-    "clones_count": 18
+    "clones_count": 8
   },
   {
     "id": 966799438,
@@ -2060,7 +2060,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/Voiceflow-KB-MCP.md",
-    "clones_count": 28
+    "clones_count": 16
   },
   {
     "id": 917789415,
@@ -2188,7 +2188,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/top-questions.md",
-    "clones_count": 22
+    "clones_count": 13
   },
   {
     "id": 927680730,
@@ -2316,7 +2316,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/poc-voice-tester.md",
-    "clones_count": 34
+    "clones_count": 15
   },
   {
     "id": 898925657,
@@ -2444,7 +2444,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-voice-outbound.md",
-    "clones_count": 19
+    "clones_count": 9
   },
   {
     "id": 1015332768,
@@ -2572,7 +2572,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-agent-copilot.md",
-    "clones_count": 15
+    "clones_count": 7
   },
   {
     "id": 1039992221,
@@ -2700,7 +2700,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/prompts-manager.md",
-    "clones_count": 20
+    "clones_count": 13
   },
   {
     "id": 664723717,
@@ -2828,7 +2828,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/langchain-local-knowledgebase.md",
-    "clones_count": 41
+    "clones_count": 26
   },
   {
     "id": 715715476,
@@ -2956,7 +2956,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-proxy-api.md",
-    "clones_count": 27
+    "clones_count": 14
   },
   {
     "id": 761468585,
@@ -3084,7 +3084,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-analytics-proxy.md",
-    "clones_count": 36
+    "clones_count": 18
   },
   {
     "id": 664704867,
@@ -3212,7 +3212,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/elevenlabs-integration.md",
-    "clones_count": 34
+    "clones_count": 26
   },
   {
     "id": 964508606,
@@ -3340,7 +3340,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voice-call-timer.md",
-    "clones_count": 34
+    "clones_count": 12
   },
   {
     "id": 936635061,
@@ -3468,7 +3468,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/answers-user-feedback.md",
-    "clones_count": 83
+    "clones_count": 14
   },
   {
     "id": 664715710,
@@ -3683,7 +3683,7 @@
     "has_wiki": true,
     "has_pages": false,
     "has_discussions": false,
-    "forks_count": 1,
+    "forks_count": 2,
     "mirror_url": null,
     "archived": false,
     "disabled": false,
@@ -3694,7 +3694,7 @@
     "web_commit_signoff_required": false,
     "topics": [],
     "visibility": "public",
-    "forks": 1,
+    "forks": 2,
     "open_issues": 1,
     "watchers": 7,
     "default_branch": "main",
@@ -3724,7 +3724,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-prompts.md",
-    "clones_count": 8
+    "clones_count": 10
   },
   {
     "id": 1067246724,
@@ -3989,7 +3989,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/hra-api.md",
-    "clones_count": 8
+    "clones_count": 10
   },
   {
     "id": 1022620478,
@@ -4117,7 +4117,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/date-time-api.md",
-    "clones_count": 5
+    "clones_count": 6
   },
   {
     "id": 1044272378,
@@ -4245,7 +4245,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/slm-in-browser.md",
-    "clones_count": 6
+    "clones_count": 8
   },
   {
     "id": 794508992,
@@ -4373,7 +4373,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmlingua-api.md",
-    "clones_count": 12
+    "clones_count": 15
   },
   {
     "id": 1017541952,
@@ -4507,7 +4507,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/llmfirewall-api.md",
-    "clones_count": 7
+    "clones_count": 8
   },
   {
     "id": 768364471,
@@ -4635,7 +4635,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-extensions-demo.md",
-    "clones_count": 24
+    "clones_count": 22
   },
   {
     "id": 996725129,
@@ -5147,7 +5147,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vfassistant-electron.md",
-    "clones_count": 11
+    "clones_count": 13
   },
   {
     "id": 726205143,
@@ -5275,7 +5275,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-twilio-sms-integration.md",
-    "clones_count": 23
+    "clones_count": 20
   },
   {
     "id": 880412592,
@@ -5531,7 +5531,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-spacy-pii-redac.md",
-    "clones_count": 10
+    "clones_count": 11
   },
   {
     "id": 863133813,
@@ -5659,7 +5659,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-sitemap-kb-auto-updater.md",
-    "clones_count": 9
+    "clones_count": 10
   },
   {
     "id": 861719434,
@@ -5787,7 +5787,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-shopify-demo-extensions.md",
-    "clones_count": 12
+    "clones_count": 13
   },
   {
     "id": 845485693,
@@ -5915,7 +5915,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-seatselector-extension-demo.md",
-    "clones_count": 12
+    "clones_count": 13
   },
   {
     "id": 866757293,
@@ -6043,7 +6043,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-pdf-content-reader-extension.md",
-    "clones_count": 10
+    "clones_count": 9
   },
   {
     "id": 832087938,
@@ -6171,7 +6171,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-kb-content-export.md",
-    "clones_count": 11
+    "clones_count": 10
   },
   {
     "id": 747269800,
@@ -6299,7 +6299,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-date-parser.md",
-    "clones_count": 15
+    "clones_count": 14
   },
   {
     "id": 833086615,
@@ -6427,7 +6427,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/vf-chat-domain-checker.md",
-    "clones_count": 15
+    "clones_count": 16
   },
   {
     "id": 793728647,
@@ -6555,7 +6555,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/tico-me.md",
-    "clones_count": 12
+    "clones_count": 13
   },
   {
     "id": 704451775,
@@ -6683,7 +6683,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/presidio-api.md",
-    "clones_count": 12
+    "clones_count": 11
   },
   {
     "id": 697018607,
@@ -6811,7 +6811,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/kb-vf-zendesk.md",
-    "clones_count": 10
+    "clones_count": 11
   },
   {
     "id": 778847662,
@@ -6939,7 +6939,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/download-kb-file.md",
-    "clones_count": 11
+    "clones_count": 10
   },
   {
     "id": 664701432,
@@ -7067,7 +7067,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/asr-demo-whisper.md",
-    "clones_count": 15
+    "clones_count": 13
   },
   {
     "id": 525908718,
@@ -7457,7 +7457,7 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/ner-manager.md",
-    "clones_count": 12
+    "clones_count": 11
   },
   {
     "id": 664720036,
@@ -7591,6 +7591,6 @@
     },
     "custom_properties": {},
     "readmePath": "assets/readmes/voiceflow-slack.md",
-    "clones_count": 13
+    "clones_count": 16
   }
 ]
